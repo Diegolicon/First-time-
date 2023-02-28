@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+    <div class="pagina-inicial">
+        <header class="cabecalho">
+            <img src="{% static '/assets/logo/Logo(2).png' %}" alt="Logo da Alura Space">
+            <div class="cabecalho__busca">
+                <div class="busca__fundo">
+                    <input class="busca__input" type="text" placeholder="O que você procura?">
+                    <img class="busca__icone" src="{% static '/assets/ícones/1x/search.png' %}" alt="ícone de search">
+                </div>
+            </div>
+        </header>
+        <main class="principal">
+            <section class="menu-lateral">
+                <nav class="menu-lateral__navegacao">
+                    <a href="{% url 'index' %}"><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}"> Home</a>
+                    <a href="#"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"> Mais vistas</a>
+                    <a href="#"><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}"> Novas</a>
+                    <a href="#"><img src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"> Surpreenda-me</a>
+                </nav>
+            </section>
+        </main>
+    </div>
+    <section class="conteudo">
+        <section class="imagem">
+            <div class="imagem__conteudo">
+                <img class="imagem__imagem" src="{% static '/assets/imagens/galeria/dorsal.png' %}">
+                <div class="imagem__info">
+                    <div class="imagem__texto">
+                        <p class="imagem__titulo"><a  href="https://www.instagram.com/p/CnHxphpOMdxCWeM2uWK0w16XgKo91_OaKLO_hA0/?igshid=YmMyMTA2M2Y=" style="color: aliceblue;">“Dorsal Cósmica” a dorsal de um humano comum que mais se assemelha a de um Deus</a></p>
+                        <p class="imagem__descricao">7 de janeiro de 2023</p>
+                        <p class="imagem__texto">A dorsal é verdadeiramente divina! Ela é uma das partes mais impressionantes do corpo humano, com sua musculatura forte e imponente que se estende ao longo da espinha, criando um efeito visual poderoso. Não é à toa que muitos atletas, fisiculturistas e entusiastas da boa forma se dedicam a aprimorar essa região do corpo, porque uma dorsal bem desenvolvida é um verdadeiro espetáculo para os olhos.E quando se trata de dorsais verdadeiramente divinas, não há como não mencionar a dorsal do nosso querido amigo Lucas. Sua musculatura é simplesmente impressionante, com cada feixe de fibras musculares perfeitamente esculpido e definido. É evidente que Lucas se dedica com afinco aos treinos e cuidados com seu corpo, e sua dorsal é a prova viva disso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+{% endblock %}
